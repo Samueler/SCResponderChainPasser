@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AF825C70BA607FE1B636295 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0AF825C70BA607FE1B636295 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3464B34BE86D9A67DBB387ED /* Pods-SCResponderChainPasser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCResponderChainPasser_Example.debug.xcconfig"; path = "Target Support Files/Pods-SCResponderChainPasser_Example/Pods-SCResponderChainPasser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3A035F28DCBADBF23648336E /* Pods-SCResponderChainPasser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCResponderChainPasser_Tests.release.xcconfig"; path = "Target Support Files/Pods-SCResponderChainPasser_Tests/Pods-SCResponderChainPasser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4E3EAAA60D6CE5A8040A424D /* Pods_SCResponderChainPasser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCResponderChainPasser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7464EB381282074A9C921686 /* Pods_SCResponderChainPasser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCResponderChainPasser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98C1EA500BEEC48B67F64074 /* SCResponderChainPasser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SCResponderChainPasser.podspec; path = ../SCResponderChainPasser.podspec; sourceTree = "<group>"; };
+		98C1EA500BEEC48B67F64074 /* SCResponderChainPasser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SCResponderChainPasser.podspec; path = ../SCResponderChainPasser.podspec; sourceTree = "<group>"; };
 		BA904FAA2E19F5D0DD88C987 /* Pods-SCResponderChainPasser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCResponderChainPasser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SCResponderChainPasser_Tests/Pods-SCResponderChainPasser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CEAD7F09CD0103B0E8E7DB84 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CEAD7F09CD0103B0E8E7DB84 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				BA904FAA2E19F5D0DD88C987 /* Pods-SCResponderChainPasser_Tests.debug.xcconfig */,
 				3A035F28DCBADBF23648336E /* Pods-SCResponderChainPasser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -449,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -497,10 +497,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCResponderChainPasser/SCResponderChainPasser-Prefix.pch";
 				INFOPLIST_FILE = "SCResponderChainPasser/SCResponderChainPasser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,10 +515,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCResponderChainPasser/SCResponderChainPasser-Prefix.pch";
 				INFOPLIST_FILE = "SCResponderChainPasser/SCResponderChainPasser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
