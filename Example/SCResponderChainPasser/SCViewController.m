@@ -7,6 +7,9 @@
 //
 
 #import "SCViewController.h"
+#import <UIResponder+SCResponderChainPasser.h>
+#import "SCTestEventProxy.h"
+#import "SCPurpleView.h"
 
 @interface SCViewController ()
 
@@ -14,16 +17,14 @@
 
 @implementation SCViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    SCPurpleView *purpleView = [[SCPurpleView alloc] initWithFrame:CGRectMake(100, 100, 300, 300)];
+    purpleView.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:purpleView];
+    
+    self.eventProxy = [[SCTestEventProxy alloc] init];
 }
 
 @end
